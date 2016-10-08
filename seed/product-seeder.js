@@ -2,7 +2,7 @@ var Product = require('../models/product');	//import product model
 
 var mongoose = require('mongoose'); //connect with mongoose
 
-mongoose.connect('mongodb://api:quaker@ds053196.mlab.com:53196/coffeecom'); //connect with mLab 
+mongoose.connect('localhost:27017/shopping'); //connect to mongodb
 
 var products = [
 	new Product({ 	//create a new product the model; pass the javascript object to the database

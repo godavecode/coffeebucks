@@ -17,7 +17,7 @@ var userRoutes = require('./routes/user');
 
 var app = express();
 
-mongoose.connect('mongodb://api:quaker@ds053196.mlab.com:53196/coffeecom');   //connection to mLab
+mongoose.connect('localhost:27017/shopping');   //connection to mongodb
 require('./config/passport');   //require package load variable to setup passport
 
 app.use(logger('dev'));
